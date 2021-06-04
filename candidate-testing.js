@@ -15,12 +15,14 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
+const input = require ("readline-sync");
 
-}
+let CandidateName = input.question("Candidate Name:");
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
+question = input.question(" 1) Who was the first American woman in space ?");
 
 }
 
@@ -28,16 +30,21 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
+candidateAnswer = input.question ("Your Answer : ")
+
+correctAnswers =input.question ("correctAnswer : Sally Ride ")
+console.log(typeof String);
 
   let grade;
   
 
-  return grade;
+  return grade; 
 }
 
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
+ let CandidateName = input.question("Candidate Name:");
   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
