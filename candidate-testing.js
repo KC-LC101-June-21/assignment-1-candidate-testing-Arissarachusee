@@ -11,6 +11,9 @@ let candidateAnswer;
 let questions;
 let correctAnswers;
 let candidateAnswers;
+let answerQuestionOne = "Sally Ride";
+let answerQuestionTwo = "sally ride";
+let correctAnswerscount = 0;
 
 
 function askForName() {
@@ -36,14 +39,32 @@ correctAnswers =input.question ("correctAnswer : Sally Ride ")
 
 //console.log(correctAnswers ,"YES CORRECT!")
 
-if (!Sally) {
-   console.log("Try again!");
+if (candidateAnswer == answerQuestionOne || candidateAnswer == answerQuestionTwo ) {
+   console.log("Great!");
+
+correctAnswerscount = 1; 
+
 } else {
-   console.log("Great!.");
+   console.log("Try Again!.");
 }
 
-  let grade;
-  
+  let grade; 
+if (correctAnswerscount == 1) { 
+
+grade = "100%"
+
+console.log(grade);
+
+
+
+} else  {
+
+grade = "0%"
+
+console.log(grade);
+
+}
+
 
   return grade; 
 }
